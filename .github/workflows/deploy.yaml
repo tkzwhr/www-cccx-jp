@@ -1,0 +1,61 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - run: corepack enable
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 24
+          cache: pnpm
+      - name: Install dependencies
+        run: pnpm i --frozen-lockfile
+      - name: Build website
+        run: pnpm run build
+      - name: Restructure build output for baseUrl
+        run: |
+          mkdir -p build_new/~tkzwhr
+          mv build/* build_new/~tkzwhr/
+          rm -rf build
+          mv build_new build
+      - name: Create root redirect file
+        run: |
+          cat <<EOF > build/index.html
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <title>www.cccx.jp</title>
+            </head>
+            <body style="font-family: serif">
+              <h1>Index of /</h1>
+              <ul style="font-size: 120%">
+                <li><a href="~tkzwhr/">~tkzwhr/</a></li>
+              </ul>
+            </body>
+          </html>
+          EOF
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: build
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
