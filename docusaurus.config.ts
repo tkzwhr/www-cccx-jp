@@ -1,6 +1,9 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+import remarkDirective from "remark-directive";
+import remarkDirectiveRehype from "remark-directive-rehype";
+import rehypeMahjongTiles from "@tkzwhr/rehype-mahjong-tiles";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -40,7 +43,7 @@ const config: Config = {
         docs: {
           path: 'igo',
           routeBasePath: 'igo',
-          sidebarPath: './sidebarsIgo.ts',
+          sidebarPath: './sidebarsIgo.ts'
         },
         blog: {
           showReadingTime: true,
@@ -68,6 +71,8 @@ const config: Config = {
         path: 'mahjong',
         routeBasePath: 'mahjong',
         sidebarPath: './sidebarsMahjong.ts',
+        remarkPlugins: [remarkDirective, remarkDirectiveRehype],
+        rehypePlugins: [[rehypeMahjongTiles, {size: "48px"}]]
       },
     ],
   ],
