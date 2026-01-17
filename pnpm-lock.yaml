@@ -17,7 +17,7 @@ importers:
       '@mdx-js/react':
         specifier: ^3.1.1
         version: 3.1.1(@types/react@19.2.2)(react@19.2.0)
-      '@tkzwhr/rehype-mahjong-tiles':
+      '@tkzwhr/remark-mahjong-tiles':
         specifier: ^1.0.0
         version: 1.0.0
       clsx:
@@ -1423,8 +1423,8 @@ packages:
     resolution: {integrity: sha512-+PmQX0PiAYPMeVYe237LJAYvOMYW1j2rH5YROyS3b4CTVJum34HfRvKvAzozHAQG0TnHNdUfY9nCeUyRAs//cw==}
     engines: {node: '>=14.16'}
 
-  '@tkzwhr/rehype-mahjong-tiles@1.0.0':
-    resolution: {integrity: sha512-MhxGSwDHwX3XshD5oDub4Yf6+8ZfVup1BT0elRKgARw05D30v6BUpFAEsyidxcrqsyx3FRzfpuhR6RO1DO8h8w==}
+  '@tkzwhr/remark-mahjong-tiles@1.0.0':
+    resolution: {integrity: sha512-9vJW4GLnpD5hGSRTHYxTT723LQClvsvxWG/mBtHt0BhVHnn9rW4izXU0kv4QHa+4g/qlF7lZTMu/MZDKZLgDpg==}
 
   '@trysound/sax@0.2.0':
     resolution: {integrity: sha512-L7z9BgrNEcYyUYtF+HaEfiS5ebkh9jXqbszz7pC0hRBPaatV0XjSD3+eHrpqFemQfgwiFF0QPIarnIihIDn7OA==}
@@ -7211,7 +7211,7 @@ snapshots:
     dependencies:
       defer-to-connect: 2.0.1
 
-  '@tkzwhr/rehype-mahjong-tiles@1.0.0': {}
+  '@tkzwhr/remark-mahjong-tiles@1.0.0': {}
 
   '@trysound/sax@0.2.0': {}
 
