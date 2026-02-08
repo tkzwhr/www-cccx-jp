@@ -2,14 +2,13 @@
 sidebar_position: 1
 ---
 
-麻雀の世界へようこそ！
-===
+# 麻雀の世界へようこそ！
 
 麻雀プロによるリーグ戦 **[Mリーグ](https://m-league.jp/)** や、人気VTuber・配信者によるゲーム実況をきっかけに、今や麻雀は世代を問わず熱狂を生む一大エンターテインメントとなりました。
 
 中でも **[雀魂](https://mahjongsoul.com/)** は、その火付け役とも言える存在。
 
-![mahjongsoul](/img/mahjong/mahjongsoul.jpg)
+![mahjongsoul](./banner.jpg)
 
 派手な演出と可愛いキャラクター、そして初心者への手厚いサポートで、かつての「難しい・怖い」というイメージを完全に塗り替えました。
 

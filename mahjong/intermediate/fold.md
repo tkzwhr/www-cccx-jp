@@ -2,8 +2,7 @@
 sidebar_position: 2
 ---
 
-引くとは何か？
-===
+# 引くとは何か？
 
 麻雀で勝つには、持ち点を増やし、減らさないようにする必要があります。
 
@@ -57,13 +56,13 @@ sidebar_position: 2
 
 ３４種類ある牌にも、放銃のしやすさに違いがあります。
 
-|牌|放銃のしやすさ|
-|:--|:--|
-|:mahjong-tiles{src="1234567z" size="30px"}|★|
-|:mahjong-tiles{src="19m19p19s" size="30px"}|★★|
-|:mahjong-tiles{src="28m28p28s" size="30px"}|★★★|
-|:mahjong-tiles{src="37m37p37s" size="30px"}|★★★★|
-|:mahjong-tiles{src="456m456p456s" size="30px"}|★★★★★|
+| 牌                                             | 放銃のしやすさ |
+| :--------------------------------------------- | :------------- |
+| :mahjong-tiles{src="1234567z" size="30px"}     | ★              |
+| :mahjong-tiles{src="19m19p19s" size="30px"}    | ★★             |
+| :mahjong-tiles{src="28m28p28s" size="30px"}    | ★★★            |
+| :mahjong-tiles{src="37m37p37s" size="30px"}    | ★★★★           |
+| :mahjong-tiles{src="456m456p456s" size="30px"} | ★★★★★          |
 
 ５種類の待ちの中で存在するパターン数に基づいていますが、基本的には、
 
