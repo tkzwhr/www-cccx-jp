@@ -24,7 +24,7 @@ export default function Home(): ReactNode {
               <div className={styles.section_name}>職歴</div>
               <dl>
                 <dt>2023 - 現在</dt>
-                <dd>株式会社Schoo<br/>エンジニアリングマネージャー</dd>
+                <dd>株式会社Schoo<br/>開発部門責任者</dd>
                 <dt>2019 - 2023</dt>
                 <dd>株式会社ビズリーチ<br/>ソフトウェアエンジニア</dd>
                 <dt>2012 - 2019</dt>
